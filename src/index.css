@@ -1,5 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #d9b99b;
+  --color-bg-accent: #0ea5e9;
+  --color-text-primary: #1e293b;
+  --color-text-secondary: #64748b;
+}
+
+.dark {
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #d9b99b;
+  --color-bg-accent: #38bdf8;
+  --color-text-primary: #e4d5b7;
+  --color-text-secondary: #94a3b8;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  transition-property: background-color, color;
+  transition-duration: 200ms;
+  font-family: 'Sora', sans-serif;
+}
+
+[data-theme="dark"] {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-dark);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-bg-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-bg-thumb);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-bg-thumb-hover);
+}

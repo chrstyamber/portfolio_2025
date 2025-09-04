@@ -22,20 +22,20 @@ export default function Skills() {
   const [experiences] = useState([
     {
       id: 1,
-      company: "Google",
-      role: "Lead Software Engineer",
-      period: "Nov 2019 - Present",
+      company: "TM Research & Development",
+      role: "Software Engineer (Backend)",
+      period: "Nov 2024 - Present",
       description:
-        "Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience.",
+          "Part of the MINDSGEOPRO project team, focusing on backend development. Implemented APIs using Python (FastAPI) to support each MVP deliverable. Worked on database integration, backend logic, and system performance improvements to ensure reliable and scalable solutions for the project.",
       logo: "/assets/google.svg",
     },
     {
       id: 2,
-      company: "Youtube",
-      role: "Software Engineer",
-      period: "Jan 2017 - Oct 2019",
+      company: "Yeonswol Design",
+      role: "Freelance Graphic Designer & Developer",
+      period: "Jan 2022 - Present",
       description:
-        "At Youtube, I served as a  Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.",
+        "Developed and designed various graphic assets, websites, and applications on freelance basis. Collaborated with clients to understand their needs, and designed visually appealing graphic assets",
       logo: "/assets/youtube.svg",
     },
   ]);
@@ -74,9 +74,9 @@ export default function Skills() {
       </div>
 
       {/* Experience Section */}
-      <div className="bg-black w-full my-8 py-8 lg:my-16 lg:py-16">
+      <div className="bg-secondary w-full my-8 py-8 lg:my-16 lg:py-16">
         <motion.h2
-          className="text-2xl lg:text-4xl text-center text-white"
+          className="text-2xl lg:text-4xl text-center text-black"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -90,7 +90,7 @@ export default function Skills() {
           {experiences.map((exp, index) => (
             <motion.div
               key={exp.id}
-              className="bg-black p-5 border border-[#D4D4D8] rounded-md hover:bg-[#27272A] transition-all cursor-pointer"
+              className="bg-secondary p-5 border border-[#D4D4D8] rounded-md hover:bg-[#27272A] transition-all cursor-pointer"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{
@@ -104,8 +104,8 @@ export default function Skills() {
               <div className="flex justify-between flex-col items-start lg:flex-row lg:items-center">
                 <div className="flex items-center gap-5">
                   <img className="w-7" src={exp.logo} alt="" />
-                  <h2 className="font-semibold text-white text-lg lg:text-xl">
-                    {exp.role} at {exp.company}
+                  <h2 className="font-semibold text-black text-lg lg:text-xl">
+                    {exp.role} , {exp.company}
                   </h2>
                 </div>
                 <span className="text-[#D4D4D8] font-semibold text-sm mt-4 lg:mt-0 lg:text-base">

@@ -33,7 +33,7 @@ export default function Home() {
             <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
               Hello, <TypeAnimation
                 sequence={[
-                  'I am Sathish Kumar',
+                  'I am Christy Amber',
                   1000,
                   // 'I am a Web Developer',
                   // 1000,
@@ -46,16 +46,16 @@ export default function Home() {
               />
             </motion.h2>
             <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
-              <span className="font-extrabold">Fullstack</span>{" "}
+              <span className="font-extrabold">Graphic Designer</span>{" "}
               <span
                 className="text-white font-extrabold"
                 style={{ WebkitTextStroke: "1px black" }}
               >
-                Developer
+                & Developer
               </span>
             </motion.h2>
             <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
-              Based In <span className="font-extrabold">India.</span>
+              Based In <span className="font-extrabold">Malaysia</span>
             </motion.h2>
           </motion.div>
 

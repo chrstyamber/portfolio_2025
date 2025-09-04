@@ -21,8 +21,8 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="bg-black px-5 lg:px-28 py-8 my-8 lg:py-16 lg:my-16" id="projects">
-      <h2 className="text-2xl lg:text-4xl text-center text-white">
+    <div className="bg-secondary px-5 lg:px-28 py-8 my-8 lg:py-16 lg:my-16" id="projects">
+      <h2 className="text-2xl lg:text-4xl text-center text-black">
         My <span className="font-extrabold">Projects</span>
       </h2>
 
@@ -45,15 +45,15 @@ export default function Projects() {
             </div>
 
             <div className="lg:w-1/2 lg:space-y-6 space-y-4">
-              <h2 className="font-extrabold text-white mt-5 lg:mt-0 text-3xl lg:text-5xl">
+              <h2 className="font-extrabold text-black mt-5 lg:mt-0 text-3xl lg:text-5xl">
                 {String(project.id).padStart(2, "0")}
               </h2>
-              <p className="font-bold text-white text-xl lg:text-3xl">{project.title}</p>
+              <p className="font-bold text-black text-xl lg:text-3xl">{project.title}</p>
 
               <p className="font-light text-sm/6 lg:text-base text-[#71717A]">
                 {project.description}
               </p>
-              <a href={project.link} className="text-white mt-3 block" target="_blank" rel="noopener noreferrer">
+              <a href={project.link} className="text-black mt-3 block" target="_blank" rel="noopener noreferrer">
                 <TbExternalLink size={23} />
               </a>
             </div>
