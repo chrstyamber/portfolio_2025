@@ -43,16 +43,22 @@ To deploy the portfolio website, you can use platforms like:
 - **Netlify**
 - **GitHub Pages** (with additional configurations)
 
-## How to Contribute
-If you’d like to contribute or improve this project, feel free to fork the repository and submit a pull request.
+## Install Node.js using Docker
+To install node.jd, please use this instructions:
+# Docker has specific installation instructions for each operating system.
+# Please refer to the official documentation at https://docker.com/get-started/
 
-## 🙌 Show Your Support
-If you like this project, please star it and share it with your friends!
+# Pull the Node.js Docker image:
+docker pull node:22-alpine
 
-## Contact
-If you have any questions or suggestions, feel free to reach out via:
-- **Email:** sathish31102004@gmail.com
-- **LinkedIn:** [@sathishk-dev](https://linkedin.com/in/sathishk-dev)
+# Create a Node.js container and start a Shell session:
+docker run -it --rm --entrypoint sh node:22-alpine
 
----
-Made with ❤️ by Sathish Kumar.
+# Verify the Node.js version:
+node -v # Should print "v22.19.0".
+
+# Verify npm version:
+npm -v # Should print "10.9.3".
+
+# Run locally
+docker run -it --rm -v ${PWD}:/app -w /app -p 5173:5173 node:22-alpine sh -c "npm install && npm run dev -- --host"
