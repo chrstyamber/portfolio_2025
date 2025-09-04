@@ -45,20 +45,20 @@ To deploy the portfolio website, you can use platforms like:
 
 ## Install Node.js using Docker
 To install node.jd, please use this instructions:
-# Docker has specific installation instructions for each operating system.
-# Please refer to the official documentation at https://docker.com/get-started/
+- **Docker has specific installation instructions for each operating system.**
+- **Please refer to the official documentation at https://docker.com/get-started/**
 
-# Pull the Node.js Docker image:
+**Pull the Node.js Docker image:**
 docker pull node:22-alpine
 
-# Create a Node.js container and start a Shell session:
+**Create a Node.js container and start a Shell session:**
 docker run -it --rm --entrypoint sh node:22-alpine
 
-# Verify the Node.js version:
+**Verify the Node.js version:**
 node -v # Should print "v22.19.0".
 
-# Verify npm version:
+**Verify npm version:**
 npm -v # Should print "10.9.3".
 
-# Run locally
+**Run locally**
 docker run -it --rm -v ${PWD}:/app -w /app -p 5173:5173 node:22-alpine sh -c "npm install && npm run dev -- --host"
